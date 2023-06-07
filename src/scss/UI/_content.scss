@@ -11,6 +11,8 @@
   scroll-behavior: smooth;
   @include m.desktop{
     padding-bottom: 100px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: v.$border-radius;
   }
 }
 .content-card {
