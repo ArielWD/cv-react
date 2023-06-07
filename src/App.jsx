@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { NavBar } from './components/NavBar'
 import { Portfolio } from './components/Portfolio'
 import { Background } from './components/Background'
+import spanish from './assets/spanish.svg'
+import english from './assets/english.svg'
 function App () {
   const [lang, setLang] = useState('en')
 
@@ -19,8 +21,8 @@ function App () {
     <>
       <div className='container'>
         <div className='menu__language'>
-          <button><img onClick={handleLangEn} src='/src/assets/english.svg' alt='english flag' /></button>
-          <button><img onClick={handleLangEs} src='/src/assets/spanish.svg' alt='spanish flag' /></button>
+          <button onClick={handleLangEn}><img src={english} alt='english flag' /></button>
+          <button onClick={handleLangEs}><img src={spanish} alt='spanish flag' /></button>
         </div>
         <NavBar />
         <Portfolio lang={lang} />
