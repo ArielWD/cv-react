@@ -1,0 +1,25 @@
+@use '/src/scss/base/variables' as v;
+
+.socials {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.socials a {
+  color: v.$background-color-2;
+  margin: 2rem;
+  transition: 0.2s linear;
+  transition-property: background-color, color;
+  font-size: 5rem;
+}
+.socials span{
+  font-size: 3rem;
+  font-family: v.$fuente-principal;
+  margin: 1rem;
+  font-weight: 400;
+}
+.socials a:hover {
+  color: v.$accent-color;
+  transition: 0.2s linear;
+  transition-property: background-color, color;
+}

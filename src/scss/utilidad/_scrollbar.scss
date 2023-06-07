@@ -1,0 +1,31 @@
+@use '/src/scss/base/variables' as v;
+@use '/src/scss/base/mixins' as m;
+
+::-webkit-scrollbar {
+    width: 8px;
+
+    @include m.desktop{
+        width: 8px;
+    }
+    @include m.tablet{
+       display: none;
+    }
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    @include m.desktop{
+        background: v.$background-color;
+    }
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+
+    @include m.desktop{
+        background-color: #fff;
+        border-radius: 10px;
+    }
+}
+.content:hover::-webkit-scrollbar-thumb {
+    background: v.$light-grey;
+}

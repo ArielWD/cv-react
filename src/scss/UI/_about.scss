@@ -1,0 +1,53 @@
+@use '/src/scss/base/variables' as v;
+
+.about {
+    display: flex;
+    flex-direction: column;
+
+    p{
+      line-height: 1.5;
+    }
+}
+  .about-item {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .language {
+    margin-bottom: 15px;
+  }
+  .language p {
+    margin: 0;
+  }
+  .bar {
+    background: rgba(0, 0, 0, 0.1);
+    display: block;
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .bar span {
+    height: 8px;
+    float: left;
+    background: v.$accent-color;
+  }
+  .spanish {
+    width: 100%;
+  }
+  .english {
+    width: 60%;
+  }
+  .skill {
+    background-color: v.$accent-color;
+    color: #fff;
+    line-height: 35px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: .5rem;
+    width: 10rem;
+  }
+  .skills{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    text-align: center;
+  }
