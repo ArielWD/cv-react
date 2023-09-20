@@ -43,7 +43,7 @@ export function Contenido () {
       <section className='content-card projects' id='projects'>
         <h1>Proyectos</h1>
         <div className='project-list'>
-          <div className='project-tile'>
+          <a href='https://piccolowood.netlify.app' target='_blank' rel='noreferrer' className='project-tile'>
             <img
               src={piccolowood}
               alt='Pagina Piccolo Wodd'
@@ -56,8 +56,8 @@ export function Contenido () {
                 </p>
               </div>
             </div>
-          </div>
-          <div className='project-tile'>
+          </a>
+          <a href='https://suculentasymas.netlify.app' target='_blank' rel='noreferrer' className='project-tile'>
             <img
               src={suculentas}
               alt='Pagina Piccolo Wodd'
@@ -70,7 +70,7 @@ export function Contenido () {
                 </p>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <a href='https://github.com/arielWD' target='_blank' rel='noreferrer'>Ver Mas...</a>
       </section>
