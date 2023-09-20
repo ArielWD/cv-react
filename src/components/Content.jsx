@@ -1,3 +1,5 @@
+import piccolowood from '../assets/piccolowood.webp'
+import suculentas from '../assets/suculentasymas.webp'
 export function Content () {
   return (
     <div className='content'>
@@ -40,22 +42,36 @@ export function Content () {
       <section className='content-card projects' id='projects'>
         <h1>Projects</h1>
         <div className='project-list'>
-          {/* <div className="project-tile">
-                        <img src="https://shots.codepen.io/nietoperq/pen/BaPJqGW-512.webp?version=1674304822"
-                            alt="" />
-                        <div className="overlay">
-                            <div className="project-description">
-                                <h3>Project 1</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nisi aperiam voluptate accusamus velit omnis.
-                                </p>
-                            </div>
-                        </div>
-                      </div>  */}
-          <h2 className='coming-soon'>Coming soon</h2>
-          {/* <a href="https://github.com/arielWD">see more...</a> */}
+          <div className='project-tile'>
+            <img
+              src={piccolowood}
+              alt='Pagina Piccolo Wodd'
+            />
+            <div className='overlay'>
+              <div className='project-description'>
+                <h3>Piccolo Wood</h3>
+                <p>
+                  Responsive Page inspired by an Architecture company, Includes: Html, CSS (Sass), JS
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className='project-tile'>
+            <img
+              src={suculentas}
+              alt='Pagina Piccolo Wodd'
+            />
+            <div className='overlay'>
+              <div className='project-description'>
+                <h3>Suculentas</h3>
+                <p>
+                  Responsive page inspired by a succulent nursery, Includes: Html, CSS (Sass)
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <a href='https://github.com/arielWD' target='_blank' rel='noreferrer'>See More...</a>
       </section>
 
       <section className='content-card contact' id='contact'>
